@@ -1,57 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2840" started-at="2023-07-06T13:51:34 IST" finished-at="2023-07-06T13:51:37 IST">
+  <suite name="Default suite" duration-ms="2430" started-at="2023-07-09T19:07:04 IST" finished-at="2023-07-09T19:07:07 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2840" started-at="2023-07-06T13:51:34 IST" finished-at="2023-07-06T13:51:37 IST">
+    <test name="Default test" duration-ms="2430" started-at="2023-07-09T19:07:04 IST" finished-at="2023-07-09T19:07:07 IST">
       <class name="DynamicJSON">
-        <test-method status="PASS" signature="addBook(java.lang.String,int)[pri:0, instance:DynamicJSON@536aaa8d]" name="addBook" duration-ms="2201" started-at="2023-07-06T13:51:34 IST" data-provider="BooksData" finished-at="2023-07-06T13:51:37 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[aaa]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addBook -->
-        <test-method status="PASS" signature="addBook(java.lang.String,int)[pri:0, instance:DynamicJSON@536aaa8d]" name="addBook" duration-ms="281" started-at="2023-07-06T13:51:37 IST" data-provider="BooksData" finished-at="2023-07-06T13:51:37 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sss]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[234]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addBook -->
-        <test-method status="PASS" signature="addBook(java.lang.String,int)[pri:0, instance:DynamicJSON@536aaa8d]" name="addBook" duration-ms="323" started-at="2023-07-06T13:51:37 IST" data-provider="BooksData" finished-at="2023-07-06T13:51:37 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[qaw]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[554]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="addBook()[pri:0, instance:DynamicJSON@25bbf683]" name="addBook" duration-ms="2395" started-at="2023-07-09T19:07:04 IST" finished-at="2023-07-09T19:07:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addBook -->

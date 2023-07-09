@@ -17,7 +17,7 @@ public class Basics {
 		
 		RestAssured.baseURI="https://rahulshettyacademy.com";
 		//Add Place
-		String addPlaceResponse=given().log().all()
+		String addPlaceResponse=given()//.log().all()
 			.queryParam("key","qaclick123")
 		.header("Content-Type","application/json")
 		.body(new String(Files.readAllBytes(Paths.get(".\\src\\test\\resources\\data.json"))))
@@ -37,7 +37,7 @@ public class Basics {
 		
 		//Update Place
 		String newAddress="Roosevelt, Germany";
-		given().log().all()
+		given()//.log().all()
 			.queryParam("key", "qaclick123")
 			.header("Content-Type","application/json")
 		.body("{\r\n"
@@ -47,7 +47,7 @@ public class Basics {
 				+ "}")
 		.when()
 		.put("maps/api/place/update/json")
-		.then().log().all()
+		.then()//.log().all()
 			.assertThat()
 				.statusCode(200)
 				.body("msg", equalTo("Address successfully updated"));

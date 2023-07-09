@@ -2,6 +2,7 @@ import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import pojo.AddPlace;
@@ -54,6 +55,16 @@ public class SpecBuilderTest {
 		.then().log().all()
 			.spec(respSpec)
 		.extract().response().asString();
+		JsonPath js=new JsonPath(response);
+		String placeId=js.getString("place_id");
+		given().log().all()
+			.spec(reqSpec)
+			.queryParam("place_id", placeId)
+		.when()
+		.get("/maps/api/place/get/json")
+		.then().log().all()
+			.assertThat()
+				.statusCode(200);
 		
 		
 	}
